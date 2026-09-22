@@ -14,15 +14,16 @@ public class Set
      * Creates a new Set object.
      *
      * @param reps
-     *   the number of repetitions
+     *     the number of repetitions
      * @param weight
-     *    the weight used
+     *     the weight used
      */
     public Set(int reps, double weight)
     {
         setReps(reps);
         setWeight(weight);
     }
+
     /**
      * Returns the number of repetitions.
      *
@@ -32,6 +33,7 @@ public class Set
     {
         return reps;
     }
+
     /**
      * Returns the weight used.
      *
@@ -41,31 +43,36 @@ public class Set
     {
         return weight;
     }
+
     /**
      * Sets the number of repetitions.
      *
      * @param reps
-     *    the number of repetitions
+     *     the number of repetitions
      */
     public void setReps(int reps)
     {
         if (reps < 1 || reps > 99)
         {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException(
+                "Reps must be between 1 and 99.");
         }
+
         this.reps = reps;
     }
+
     /**
      * Sets the weight used.
      *
      * @param weight
-     *   the weight used
+     *     the weight used
      */
     public void setWeight(double weight)
     {
         if (weight < 0)
         {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException(
+                "Weight cannot be negative.");
         }
 
         this.weight = weight;
