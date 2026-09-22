@@ -74,8 +74,10 @@ public class Main {
             System.out.println("4. Browse exercise database");
             System.out.println("5. Get exercise recommendations");
             System.out.println("6. View workout history");
-            System.out.println("7. Advance to next week");
-            System.out.println("8. Exit");
+            System.out.println("7. Add a custom exercise");
+            System.out.println("8. Check workout improvement");
+            System.out.println("9. Advance to next week");
+            System.out.println("10. Exit");
             System.out.println("--------------------------------------");
 
             int choice = readInt("Select an option: ");
@@ -106,10 +108,19 @@ public class Main {
                     break;
 
                 case 7:
-                    advanceWeek();
+                    addCustomExercise();
                     break;
 
                 case 8:
+                    checkImprovement();
+                    pause();
+                    break;
+
+                case 9:
+                    advanceWeek();
+                    break;
+
+                case 10:
                     running = false;
                     System.out.println("Thanks for using Gym Buddy!");
                     break;
@@ -554,6 +565,255 @@ public class Main {
                 }
             }
         }
+    }
+
+
+/*
+ * // ----------------------------------------------------------
+ * /**
+ * Allows the user to create their own exercises they can later add
+ * 
+ * @param name
+ * 
+ * @param muscles
+ * 
+ * @param sets
+ */
+    private static Exercise createAnExercise(
+        String name,
+        ArrayList<String> muscles,
+        Set sets) {
+        Exercise newE = new Exercise(name);
+        newE.addSet(sets);
+        for (int i = 0; i < muscles.size(); i++) {
+            newE.addMuscleGroup(muscles.get(i));
+        }
+        return newE;
+    }
+
+
+    private static void addCustomExercise() {
+
+        clearScreen();
+
+        System.out.println("======================================");
+        System.out.println("          ADD CUSTOM EXERCISE");
+        System.out.println("======================================");
+
+        System.out.print("Enter exercise name: ");
+        String name = scanner.nextLine().trim();
+
+        if (name.isEmpty()) {
+            System.out.println("Exercise name cannot be empty.");
+            pause();
+            return;
+        }
+
+        ArrayList<String> muscles = new ArrayList<>();
+
+        boolean addingMuscles = true;
+
+        while (addingMuscles) {
+
+            System.out.println();
+            System.out.println("Current muscle groups: " + formatMuscleGroups(
+                muscles));
+
+            System.out.println("1. Add muscle group");
+            System.out.println("2. Finish");
+
+            int choice = readInt("Select an option: ");
+
+            switch (choice) {
+
+                case 1:
+                    System.out.print("Enter muscle group: ");
+                    String muscle = scanner.nextLine().trim();
+
+                    if (muscle.isEmpty()) {
+                        System.out.println("Muscle group cannot be empty.");
+                    }
+                    else {
+                        muscles.add(muscle);
+                        System.out.println("Muscle group added.");
+                    }
+                    break;
+
+                case 2:
+                    if (muscles.isEmpty()) {
+                        System.out.println(
+                            "An exercise must have at least one muscle group.");
+                    }
+                    else {
+                        addingMuscles = false;
+                    }
+                    break;
+
+                default:
+                    System.out.println("Invalid option.");
+            }
+        }
+
+        int reps = readInt("Enter repetitions for the first set (1-99): ");
+        double weight = readDouble("Enter weight for the first set: ");
+
+        try {
+
+            Set set = new Set(reps, weight);
+
+            Exercise newExercise = createAnExercise(name, muscles, set);
+
+            exerciseDatabase.add(newExercise);
+
+            System.out.println();
+            System.out.println("Custom exercise created!");
+            System.out.println("Name: " + newExercise.getName());
+            System.out.println("Muscles: " + formatMuscleGroups(newExercise
+                .getMuscleGroup()));
+
+            System.out.println();
+            System.out.println("It has been added to your exercise database.");
+
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("Could not create exercise: " + e.getMessage());
+        }
+
+        pause();
+    }
+/*
+ * // ----------------------------------------------------------
+ * /**
+ * Used to check improvement, one of reach goals
+ */
+
+
+    private static void checkImprovement() {
+
+        clearScreen();
+
+        System.out.println("======================================");
+        System.out.println("          WORKOUT PROGRESS REPORT");
+        System.out.println("======================================");
+
+        ArrayList<Workout> previousWeek = workoutHistory.get(currentWeek - 1);
+
+        ArrayList<Workout> twoWeeksAgo = workoutHistory.get(currentWeek - 2);
+
+        if (previousWeek == null || twoWeeksAgo == null) {
+            System.out.println();
+            System.out.println(
+                "Not enough workout history to generate a progress report.");
+            System.out.println(
+                "You need completed workouts from the previous two weeks.");
+            return;
+        }
+
+        boolean foundExercise = false;
+
+        for (Workout workout : previousWeek) {
+
+            for (Exercise exercise : workout.getExercises()) {
+
+                String exerciseName = exercise.getName();
+
+                Exercise oldExercise = findExercise(twoWeeksAgo, exerciseName);
+
+                if (oldExercise == null) {
+                    continue;
+                }
+
+                foundExercise = true;
+
+                double oldWeight = getBestWeight(oldExercise);
+                double newWeight = getBestWeight(exercise);
+
+                int oldReps = getBestReps(oldExercise);
+                int newReps = getBestReps(exercise);
+
+                System.out.println();
+                System.out.println("--------------------------------------");
+                System.out.println(exerciseName);
+                System.out.println("--------------------------------------");
+
+                System.out.println("Previous week: " + oldWeight + " lbs, "
+                    + oldReps + " reps");
+
+                System.out.println("Most recent week: " + newWeight + " lbs, "
+                    + newReps + " reps");
+
+                boolean improved = false;
+
+                if (newWeight > oldWeight) {
+                    System.out.println("Weight improved by " + (newWeight
+                        - oldWeight) + " lbs.");
+                    improved = true;
+                }
+
+                if (newReps > oldReps) {
+                    System.out.println("Reps improved by " + (newReps - oldReps)
+                        + ".");
+                    improved = true;
+                }
+
+                if (!improved) {
+                    System.out.println("No improvement recorded.");
+                }
+            }
+        }
+
+        if (!foundExercise) {
+            System.out.println();
+            System.out.println("No exercises were consistently logged across "
+                + "the previous two weeks.");
+        }
+    }
+
+
+    private static Exercise findExercise(
+        ArrayList<Workout> workouts,
+        String exerciseName) {
+
+        for (Workout workout : workouts) {
+
+            for (Exercise exercise : workout.getExercises()) {
+
+                if (exercise.getName().equalsIgnoreCase(exerciseName)) {
+                    return exercise;
+                }
+            }
+        }
+
+        return null;
+    }
+
+
+    private static double getBestWeight(Exercise exercise) {
+
+        double bestWeight = 0;
+
+        for (Set set : exercise.getSets()) {
+
+            if (set.getWeight() > bestWeight) {
+                bestWeight = set.getWeight();
+            }
+        }
+        return bestWeight;
+    }
+
+
+    private static int getBestReps(Exercise exercise) {
+
+        int bestReps = 0;
+
+        for (Set set : exercise.getSets()) {
+
+            if (set.getReps() > bestReps) {
+                bestReps = set.getReps();
+            }
+        }
+
+        return bestReps;
     }
 
 
