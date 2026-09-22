@@ -1,0 +1,200 @@
+Barbell Bench Press|Chest,Triceps,Front Delts
+Incline Barbell Bench Press|Upper Chest,Triceps,Front Delts
+Decline Barbell Bench Press|Chest,Triceps
+Dumbbell Bench Press|Chest,Triceps,Front Delts
+Incline Dumbbell Bench Press|Upper Chest,Triceps,Front Delts
+Decline Dumbbell Bench Press|Chest,Triceps
+Dumbbell Fly|Chest
+Incline Dumbbell Fly|Upper Chest
+Cable Crossover|Chest
+Low Cable Crossover|Upper Chest
+Chest Dip|Chest,Triceps,Front Delts
+Push-Up|Chest,Triceps,Front Delts,Core
+Decline Push-Up|Chest,Triceps,Front Delts,Core
+Incline Push-Up|Chest,Triceps,Front Delts,Core
+Pec Deck Machine|Chest
+Chest Press Machine|Chest,Triceps
+Smith Machine Bench Press|Chest,Triceps,Front Delts
+Smith Machine Incline Bench Press|Upper Chest,Triceps,Front Delts
+Svend Press|Chest
+Floor Press|Chest,Triceps
+Pull-Up|Lats,Biceps,Forearms
+Chin-Up|Lats,Biceps,Forearms
+Lat Pulldown|Lats,Biceps,Forearms
+Close-Grip Lat Pulldown|Lats,Biceps,Forearms
+Straight-Arm Pulldown|Lats,Triceps
+Barbell Row|Upper Back,Lats,Biceps,Lower Back
+Pendlay Row|Upper Back,Lats,Biceps,Lower Back
+Dumbbell Row|Upper Back,Lats,Biceps
+T-Bar Row|Upper Back,Lats,Biceps,Lower Back
+Seated Cable Row|Upper Back,Lats,Biceps
+Wide-Grip Seated Cable Row|Upper Back,Lats,Biceps
+Single-Arm Cable Row|Upper Back,Lats,Biceps
+Chest-Supported Row|Upper Back,Lats,Biceps
+Incline Dumbbell Row|Upper Back,Lats,Biceps
+Landmine Row|Upper Back,Lats,Biceps
+Deadlift|Lower Back,Glutes,Hamstrings,Traps,Forearms
+Sumo Deadlift|Lower Back,Glutes,Quadriceps,Hamstrings
+Romanian Deadlift|Hamstrings,Glutes,Lower Back
+Stiff-Legged Deadlift|Hamstrings,Glutes,Lower Back
+Rack Pull|Lower Back,Glutes,Traps,Forearms
+Good Morning|Lower Back,Hamstrings,Glutes
+Back Extension|Lower Back,Glutes,Hamstrings
+Machine Back Extension|Lower Back,Glutes
+Shrug|Traps
+Dumbbell Shrug|Traps
+Barbell Shrug|Traps
+Trap Bar Deadlift|Quadriceps,Glutes,Hamstrings,Traps,Forearms
+Cable Face Pull|Rear Delts,Upper Back,Traps
+Reverse Fly|Rear Delts,Upper Back
+Dumbbell Rear Delt Raise|Rear Delts,Upper Back
+Barbell Overhead Press|Shoulders,Triceps,Core
+Dumbbell Overhead Press|Shoulders,Triceps,Core
+Seated Dumbbell Shoulder Press|Shoulders,Triceps
+Arnold Press|Shoulders,Triceps
+Push Press|Shoulders,Triceps,Quadriceps,Core
+Military Press|Shoulders,Triceps,Core
+Lateral Raise|Side Delts
+Dumbbell Lateral Raise|Side Delts
+Cable Lateral Raise|Side Delts
+Machine Lateral Raise|Side Delts
+Front Raise|Front Delts
+Dumbbell Front Raise|Front Delts
+Plate Front Raise|Front Delts
+Upright Row|Shoulders,Traps,Biceps
+Cable Upright Row|Shoulders,Traps,Biceps
+Seated Lateral Raise|Side Delts
+Leaning Cable Lateral Raise|Side Delts
+Behind-The-Neck Press|Shoulders,Triceps
+Landmine Press|Shoulders,Triceps,Chest
+Barbell Curl|Biceps,Forearms
+Dumbbell Curl|Biceps,Forearms
+Hammer Curl|Biceps,Forearms
+Incline Dumbbell Curl|Biceps,Forearms
+Preacher Curl|Biceps,Forearms
+EZ Bar Curl|Biceps,Forearms
+Concentration Curl|Biceps,Forearms
+Cable Biceps Curl|Biceps,Forearms
+High Cable Curl|Biceps,Forearms
+Spider Curl|Biceps,Forearms
+Zottman Curl|Biceps,Forearms
+Triceps Pushdown|Triceps
+Triceps Rope Pushdown|Triceps
+Overhead Cable Triceps Extension|Triceps
+Skull Crusher|Triceps
+Dumbbell Skull Crusher|Triceps
+Close-Grip Bench Press|Triceps,Chest,Front Delts
+Triceps Dip|Triceps,Chest,Front Delts
+Bench Dip|Triceps,Chest,Front Delts
+Dumbbell Kickback|Triceps
+Cable Kickback|Triceps
+Wrist Curl|Forearms
+Reverse Wrist Curl|Forearms
+Farmer Walk|Forearms,Traps,Core,Glutes
+Plate Pinch|Forearms
+Wrist Roller|Forearms
+Crunch|Abs
+Cable Crunch|Abs
+Decline Crunch|Abs
+Sit-Up|Abs,Hip Flexors
+Leg Raise|Abs,Hip Flexors
+Hanging Leg Raise|Abs,Hip Flexors
+Hanging Knee Raise|Abs,Hip Flexors
+Captain Chair Leg Raise|Abs,Hip Flexors
+Russian Twist|Obliques,Abs
+Bicycle Crunch|Abs,Obliques
+Side Plank|Obliques,Core
+Plank|Core,Abs
+Ab Rollout|Core,Abs
+Woodchopper|Obliques,Core
+Cable Woodchopper|Obliques,Core
+Mountain Climber|Core,Abs,Hip Flexors
+V-Up|Abs,Hip Flexors
+Toe Touch|Abs
+Hollow Body Hold|Core,Abs
+Pallof Press|Core,Obliques
+Medicine Ball Slam|Core,Abs,Shoulders
+Back Squat|Quadriceps,Glutes,Hamstrings,Core
+Front Squat|Quadriceps,Glutes,Core
+Goblet Squat|Quadriceps,Glutes,Core
+Bulgarian Split Squat|Quadriceps,Glutes,Hamstrings
+Leg Press|Quadriceps,Glutes,Hamstrings
+Hack Squat|Quadriceps,Glutes
+Leg Extension|Quadriceps
+Lying Leg Curl|Hamstrings
+Seated Leg Curl|Hamstrings
+Standing Leg Curl|Hamstrings
+Nordic Hamstring Curl|Hamstrings,Glutes
+Walking Lunge|Quadriceps,Glutes,Hamstrings
+Reverse Lunge|Quadriceps,Glutes,Hamstrings
+Forward Lunge|Quadriceps,Glutes,Hamstrings
+Step-Up|Quadriceps,Glutes
+Hip Thrust|Glutes,Hamstrings
+Glute Bridge|Glutes,Hamstrings
+Cable Pull-Through|Glutes,Hamstrings,Lower Back
+Single-Leg Romanian Deadlift|Hamstrings,Glutes,Lower Back
+Standing Calf Raise|Calves
+Seated Calf Raise|Calves
+Donkey Calf Raise|Calves
+Leg Press Calf Raise|Calves
+Hip Abduction Machine|Abductors,Glutes
+Hip Adduction Machine|Adductors
+Sissy Squat|Quadriceps
+Zercher Squat|Quadriceps,Glutes,Core
+Box Squat|Quadriceps,Glutes,Hamstrings
+Safety Bar Squat|Quadriceps,Glutes,Hamstrings,Core
+Sumo Squat|Quadriceps,Glutes,Adductors
+Curtsy Lunge|Quadriceps,Glutes,Adductors
+Side Lunge|Quadriceps,Glutes,Adductors
+Pistol Squat|Quadriceps,Glutes,Core
+Jump Squat|Quadriceps,Glutes,Calves
+Box Jump|Quadriceps,Glutes,Calves
+Kettlebell Swing|Glutes,Hamstrings,Lower Back,Core
+Kettlebell Clean|Glutes,Hamstrings,Traps,Shoulders
+Kettlebell Snatch|Shoulders,Glutes,Hamstrings,Core
+Kettlebell Turkish Get-Up|Core,Shoulders,Glutes,Quadriceps
+Kettlebell Windmill|Core,Obliques,Shoulders
+Resistance Band Chest Press|Chest,Triceps
+Resistance Band Row|Upper Back,Lats,Biceps
+Resistance Band Squat|Quadriceps,Glutes
+Resistance Band Lateral Raise|Side Delts
+Resistance Band Biceps Curl|Biceps
+Resistance Band Triceps Extension|Triceps
+Battle Rope Waves|Shoulders,Core,Biceps
+Sled Push|Quadriceps,Glutes,Calves,Core
+Sled Pull|Hamstrings,Glutes,Lower Back,Forearms
+Bear Crawl|Core,Shoulders,Quadriceps
+Farmer March|Core,Forearms,Traps
+Sandbag Clean|Glutes,Hamstrings,Traps,Biceps
+Sandbag Load|Glutes,Hamstrings,Lower Back,Biceps
+Z Press|Shoulders,Triceps,Core
+Landmine Rotation|Obliques,Core,Shoulders
+Neck Extension|Neck
+Neck Flexion|Neck
+Shrug Machine|Traps
+Seated Calf Press on Leg Press|Calves
+Glute Ham Raise|Hamstrings,Glutes,Lower Back
+Reverse Hyper|Lower Back,Glutes,Hamstrings
+Tire Flip|Glutes,Hamstrings,Quadriceps,Lower Back,Biceps
+Cable Crossover High to Low|Chest
+Cable Crossover Low to High|Upper Chest,Front Delts
+Cable Pullover|Lats,Chest
+Cable Shrug|Traps
+Cable Wrist Curl|Forearms
+Dumbbell Pullover|Chest,Lats,Triceps
+Barbell Pullover|Chest,Lats,Triceps
+Trap Bar Shrug|Traps
+Smith Machine Shrug|Traps
+Smith Machine Calf Raise|Calves
+Smith Machine Overhead Press|Shoulders,Triceps
+Smith Machine Lunges|Quadriceps,Glutes,Hamstrings
+Bodyweight Squat|Quadriceps,Glutes
+Bodyweight Calf Raise|Calves
+Triceps Pushdown with Rope|Triceps
+Triceps Pushdown with Bar|Triceps
+Reverse Grip Lat Pulldown|Lats,Biceps
+Neutral Grip Pull-Up|Lats,Biceps,Forearms
+Wide Grip Pull-Up|Lats,Upper Back,Biceps
+Assisted Pull-Up Machine|Lats,Biceps
+Assisted Dip Machine|Chest,Triceps
+Dumbbell Hammer Curl|Biceps,Forearms
