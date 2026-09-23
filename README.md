@@ -24,3 +24,5 @@ Gym Buddy is a Java application that allows users to create and track workouts, 
 - Colin Fahmy
 - Alex Leon
 - Chehwan Hong
+<img width="930" height="587" alt="Screenshot 2026-09-22 at 10 41 42 PM" src="https://github.com/user-attachments/assets/b07fce6f-e6e5-423a-b0b4-f61bb6595c3e" />
+
